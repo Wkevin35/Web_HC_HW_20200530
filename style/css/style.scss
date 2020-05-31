@@ -22,6 +22,9 @@ nav {
     position: fixed;
     width: 100%;
     color: white;
+    #logo {
+        text-align: end;
+    }
     #guid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -31,6 +34,7 @@ nav {
             text-decoration: none;
             color: white;
             transition: 0.3s;
+            font-size: 18px;
             &:hover {
                 color: brown;
                 font-size: 20px;
@@ -41,6 +45,8 @@ nav {
     #community {
         display: grid;
         grid-template-columns: repeat(2, 50px);
+        text-align: center;
+        align-items: center;
     }
    
 
@@ -78,7 +84,8 @@ nav {
             .box {
                 background-color: white;
                 text-align: center;
-               
+                padding: 10px;
+
                 .header {
                     color: $green;
                 }
@@ -129,6 +136,10 @@ nav {
                         border-color: $black;
                         width: 220px;
                         height: 52px;
+                        &:hover {
+                          background-color: brown;
+                          color: white;
+                        }
                     }
             }
         }

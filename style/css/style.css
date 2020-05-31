@@ -20,6 +20,10 @@ nav {
   color: white;
 }
 
+nav #logo {
+  text-align: end;
+}
+
 nav #guid {
   display: -ms-grid;
   display: grid;
@@ -36,6 +40,7 @@ nav #guid a {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 18px;
 }
 
 nav #guid a:hover {
@@ -48,6 +53,10 @@ nav #community {
   display: grid;
   -ms-grid-columns: (50px)[2];
       grid-template-columns: repeat(2, 50px);
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #banner {
@@ -92,6 +101,7 @@ nav #community {
 #content #news #news-box .box {
   background-color: white;
   text-align: center;
+  padding: 10px;
 }
 
 #content #news #news-box .box .header {
@@ -152,6 +162,11 @@ nav #community {
   border-color: #000000;
   width: 220px;
   height: 52px;
+}
+
+#content #idea .box #box-content button:hover {
+  background-color: brown;
+  color: white;
 }
 
 footer {
